@@ -34,9 +34,10 @@ AFRAME.registerComponent("flying-birds", {
 
     //set animation mixer of models with animation
     birdEl.setAttribute("animation-mixer", {});
-
-    
+    birdEl.setAttribute("static-body", {shape: "sphere", sphereRadius: 5});
+    birdEl.setAttribute("game-play", {elementId: `#${id}`});
     //append the bird entity as the child of the terrain entity
     terrainEl.appendChild(birdEl);
   },
 });
+
