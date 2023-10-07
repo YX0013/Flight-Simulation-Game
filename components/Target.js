@@ -26,8 +26,8 @@ AFRAME.registerComponent("target-ring", {
     ringEl.setAttribute("material","color","#ff9100");
     ringEl.setAttribute("position",position);
     ringEl.setAttribute("geometry",{ primitive: "torus",radius: 8 });   
-
-        
+    ringEl.setAttribute("static-body", {shape: "sphere", sphereRadius: 2});
+    ringEl.setAttribute("game-play", {elementId: `#${id}`});    
     terrainEl.appendChild(ringEl);
   }
 });
