@@ -22,7 +22,7 @@ AFRAME.registerComponent("game-play", {
 
     },
     init: function() {
-        var duration = 300;
+        var duration = 120;
         var timerEl = document.querySelector("#timer");
         this.startTimer(duration, timerEl);
     },
